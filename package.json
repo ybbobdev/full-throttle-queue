@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "postinstall": "echo \"#!/bin/sh\nyarn run precommit\ngit update-index --add .\" > .git/hooks/pre-commit && chmod a+x .git/hooks/pre-commit",
-    "precommit": "yarn run test && yarn run prestart && yarn run document",
+    "precommit": "yarn run test && yarn run build && yarn run document",
     "build": "rm -rf ./build && tsc -p ./tsconfig-src.json",
     "lint": "tslint src/**/*.ts",
     "pretest": "yarn run lint && rm -rf ./test && tsc -p ./tsconfig-test.json",
