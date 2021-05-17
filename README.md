@@ -11,4 +11,6 @@ yarn test
 
 usage
 ```
+const throttleQueue = new ThrottleQueue();
+
 ```
