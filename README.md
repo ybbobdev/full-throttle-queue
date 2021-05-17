@@ -3,14 +3,14 @@
 Creates a queue of promises. Promises can be proccesed in sequence with a fixed or random amount of time
 between calls
 
-Development
-```
-yarn
-yarn test
+install
+```bash
+yarn add @types/node tslib
+yarn add full-throttle-que
 ```
 
 usage
-```
+```typescript
 const tq = new ThrottleQueue();
 
 // populate queue
@@ -57,4 +57,10 @@ tq.enqueue(() => {
 // execute all functions in the queue with random time between 1 to 20 second throttle
 tq.processQueue({randomThrottle: true})
 
+```
+
+Development
+```bash
+yarn
+yarn test
 ```
