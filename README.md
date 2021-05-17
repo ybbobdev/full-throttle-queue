@@ -15,7 +15,7 @@ npm install full-throttle-que
 
 usage
 ```typescript
-const tq = new ThrottleQueue();
+import ThrottleQueue from "full-throttle-queue";
 
 // populate queue
 tq.enqueue(() => {
