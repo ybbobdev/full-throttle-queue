@@ -5,8 +5,12 @@ between calls
 
 install
 ```bash
-yarn add @types/node tslib
+yarn add @types/node tslib -D
 yarn add full-throttle-que
+
+# or
+npm install @types/node tslib -D
+npm install full-throttle-que
 ```
 
 usage
