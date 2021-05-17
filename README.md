@@ -1,4 +1,4 @@
-# throttleQueue
+# full-throttle-queue
 
 Creates a queue of promises. Promises can be proccesed in sequence with a fixed or random amount of time
 between calls

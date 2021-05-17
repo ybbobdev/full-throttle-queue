@@ -5,7 +5,8 @@
   "main": "build/index.js",
   "scripts": {
     "precommit": "yarn run test && yarn run build && yarn run document",
-    "build": "rm -rf ./build && tsc -p ./tsconfig-src.json",
+    "build": "rm -rf ./build && rm -rf tsdecl && tsc -p ./tsconfig-src.json",
+    "release": "yarn build && yarn publish",
     "lint": "tslint src/**/*.ts",
     "pretest": "yarn run lint && rm -rf ./test && tsc -p ./tsconfig-test.json",
     "test": "mocha test",
