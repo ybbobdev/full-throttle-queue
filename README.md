@@ -1,7 +1,6 @@
 # full-throttle-queue
 
-Creates a queue of promises. Promises can be proccesed in sequence with a fixed or random amount of time
-between calls
+Creates a queue of promises. Promises are processed with a fixed or random amount of time between calls.
 
 install
 ```bash
